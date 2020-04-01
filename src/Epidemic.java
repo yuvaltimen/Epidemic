@@ -87,12 +87,9 @@ public class Epidemic extends PApplet {
       }
     }
 
-    sb.append(" ------------------------------- \n");
     sb.append("Timestep: " + this.timeStep + "\n");
     sb.append("Population size: " + Constants.N + "\n");
     sb.append("S: " + s + ", I: " + i + ", R: " + r + "\n");
-    sb.append("Timestep: " + this.timeStep + "\n");
-    sb.append(" ------------------------------- \n");
 
     return sb.toString();
 
@@ -122,14 +119,11 @@ public class Epidemic extends PApplet {
   @Override
   public void draw() {
 
-    if (this.timeStep % 50 == 0) {
-      try {
-        this.stringWriter.write(this.toString());
-      } catch (IOException e) {
-        e.printStackTrace();
-      }
+    try {
+      this.stringWriter.write(this.toString());
+    } catch (IOException e) {
+      e.printStackTrace();
     }
-
 
     background(50);
     for (Person p : this.population) {
@@ -140,6 +134,9 @@ public class Epidemic extends PApplet {
   }
 
 
+  /**
+   * Main entry point to program.
+   */
   public static void main(String[] args) {
 
     FileWriter fw = null;

@@ -117,26 +117,26 @@ public class Person {
         float probOfInfection;
         // The number of people near you increase your odds of infection:
         // 0  -> 0
-        // 1  -> 0.2
-        // 2  -> 0.4
-        // 3  -> 0.7
-        // 4  -> 0.9
+        // 1  -> 0.02
+        // 2  -> 0.07
+        // 3  -> 0.2
+        // 4  -> 0.4
         // 5+ -> 1
         switch(infectedNearby.size()) {
           case 0:
             probOfInfection = 0f;
             break;
           case 1:
-            probOfInfection = 0.2f;
+            probOfInfection = 0.02f;
             break;
           case 2:
-            probOfInfection = 0.4f;
+            probOfInfection = 0.07f;
             break;
           case 3:
-            probOfInfection = 0.7f;
+            probOfInfection = 0.2f;
             break;
           case 4:
-            probOfInfection = 0.9f;
+            probOfInfection = 0.4f;
             break;
           default:
             probOfInfection = 1f;
