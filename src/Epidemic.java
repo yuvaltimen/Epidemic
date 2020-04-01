@@ -14,6 +14,7 @@ public class Epidemic extends PApplet {
   Writer fileWriter;
   Writer stringWriter;
   Collection<Person> population;
+  Posn market;
   int timeStep;
 
   /**
@@ -22,7 +23,7 @@ public class Epidemic extends PApplet {
    * 2 - Velocity is randomly changed by some function of velocity and position.
    * 3 -
    */
-  Epidemic(Writer fileWriter, Writer stringWriter) {
+  Epidemic(Writer fileWriter, Writer stringWriter, boolean useMarket) {
 
     Objects.requireNonNull(fileWriter);
     Objects.requireNonNull(stringWriter);
@@ -37,8 +38,53 @@ public class Epidemic extends PApplet {
       float vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
       this.population.add(new Person(this, x, y, vx, vy));
     }
+    this.market = new Posn(Constants.HALF_WIDTH, Constants.HALF_HEIGHT);
     this.timeStep = 0;
   }
+
+
+
+
+  static class EpidemicBuilder {
+
+    Writer fileWriter;
+    Writer stringWriter;
+    Boolean useMarket;
+
+
+
+    EpidemicBuilder() {
+      this.fileWriter = null;
+      this.stringWriter = null;
+      this.useMarket = null;
+    }
+
+
+    EpidemicBuilder updateFileWriter(Writer fw) {
+      this.fileWriter = fw;
+      return this;
+    }
+
+    EpidemicBuilder updateStringWriter(Writer sw) {
+      this.stringWriter = sw;
+      return this;
+    }
+
+    EpidemicBuilder useMarket(boolean b) {
+      this.useMarket = b;
+      return this;
+    }
+
+    Epidemic build() {
+      return new Epidemic(this.fileWriter, this.stringWriter, this.useMarket);
+    }
+
+
+
+
+  }
+
+
 
 
   /**
@@ -110,6 +156,7 @@ public class Epidemic extends PApplet {
    */
   @Override
   public void setup() {
+//    frameRate(3);
     background(50);
   }
 
@@ -126,10 +173,16 @@ public class Epidemic extends PApplet {
     }
 
     background(50);
+    fill(204, 100, 0);
+    rectMode(RADIUS);
+    rect(this.market.x, this.market.y, 10, 10);
+    noFill();
+    ellipse(this.market.x, this.market.y, 40, 40);
     for (Person p : this.population) {
       p.render();
       p.update();
     }
+
     this.timeStep++;
   }
 
@@ -150,10 +203,13 @@ public class Epidemic extends PApplet {
 
 
     String[] processingArgs = {"Epidemic"};
-    Epidemic epidemic = new Epidemic(fw, sw);
+    Epidemic epidemic = new EpidemicBuilder()
+            .updateFileWriter(fw)
+            .updateStringWriter(sw)
+            .useMarket(false)
+            .build();
     PApplet.runSketch(processingArgs, epidemic);
 
   }
-
 }
 

@@ -12,12 +12,15 @@ public class Person {
   Posn velocity;
   int timeInfected;
   Constants.Status status;
+  int stationaryDuration;
+  Posn lastLocation;
 
 
 
   Person(Epidemic sketch, float x, float y, float vx, float vy) {
     this.epidemic = sketch;
     this.position = new Posn(x, y);
+    this.lastLocation = new Posn(x, y);
     this.velocity = new Posn(vx, vy);
     boolean s = Constants.random.nextDouble() < Constants.INITIAL_INFECTED_PROPORTION;
     if (s) {
@@ -26,7 +29,7 @@ public class Person {
       this.status = Constants.Status.SUCCEPTIBLE;
     }
     this.timeInfected = 0;
-
+    this.stationaryDuration = 0;
   }
 
 
@@ -71,8 +74,32 @@ public class Person {
   /**
    * Updates the person's position and velocity.
    * Standard Random Walk - pick a random x and y velocity from {-1, 0, 1} each time.
+   * Has a random chance of getting transported to the middle (market) for some time steps.
    */
   void move() {
+
+    if (this.stationaryDuration > 0) {
+      this.stationaryDuration--;
+      return;
+    }
+
+
+    // TODO: How to keep people in an area for a time
+    if (Constants.random.nextFloat() <= Constants.PROBABILITY_OF_SHOPPING) {
+      this.position.update(Constants.HALF_WIDTH, Constants.HALF_HEIGHT);
+      this.velocity.update(0, 0);
+      this.stationaryDuration = 3;
+      return;
+    }
+
+
+    if (!this.position.equals(this.lastLocation)) {
+      this.position.update(this.lastLocation);
+    }
+
+
+
+
     float vx;
     float vy;
 
@@ -94,6 +121,7 @@ public class Person {
 
     this.position.add(this.velocity);
     this.velocity.update(vx, vy);
+    this.lastLocation.update(this.position);
   }
 
   /**

@@ -1,564 +1,804 @@
 Timestep: 0
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 0
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 1
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 1
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 2
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 2
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 3
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 3
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 4
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 4
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 5
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 5
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 6
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 6
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 7
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 7
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 8
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 8
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 9
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 9
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 10
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 10
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 11
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 11
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 12
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 12
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 13
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 13
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 14
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 14
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 15
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 15
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 16
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 16
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 17
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 17
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 18
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 18
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 19
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 19
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 20
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 20
+Population size: 250
+S: 240, I: 10, R: 0
 Timestep: 21
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 21
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 22
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 22
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 23
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 23
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 24
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 24
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 25
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 25
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 26
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 26
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 27
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 27
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 28
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 28
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 29
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 29
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 30
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 30
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 31
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 31
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 32
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 32
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 33
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 33
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 34
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 34
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 35
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 35
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 36
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 36
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 37
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 37
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 38
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 38
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 39
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 39
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 40
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 40
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 41
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 41
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 42
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 42
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 43
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 43
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 44
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 44
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 45
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 45
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 46
-Population size: 150
-S: 142, I: 8, R: 0
-Timestep: 46
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 47
-Population size: 150
-S: 141, I: 9, R: 0
-Timestep: 47
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 48
-Population size: 150
-S: 141, I: 9, R: 0
-Timestep: 48
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 49
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 49
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 50
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 50
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 51
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 51
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 52
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 52
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 53
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 53
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 54
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 54
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 55
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 55
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 56
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 56
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 57
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 57
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 58
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 58
+Population size: 250
+S: 239, I: 11, R: 0
 Timestep: 59
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 59
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 60
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 60
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 61
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 61
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 62
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 62
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 63
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 63
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 64
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 64
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 65
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 65
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 66
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 66
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 67
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 67
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 68
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 68
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 69
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 69
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 70
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 70
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 71
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 71
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 72
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 72
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 73
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 73
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 74
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 74
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 75
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 75
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 76
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 76
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 77
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 77
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 78
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 78
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 79
-Population size: 150
-S: 140, I: 10, R: 0
-Timestep: 79
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 80
-Population size: 150
-S: 139, I: 11, R: 0
-Timestep: 80
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 81
-Population size: 150
-S: 139, I: 11, R: 0
-Timestep: 81
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 82
-Population size: 150
-S: 139, I: 11, R: 0
-Timestep: 82
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 83
-Population size: 150
-S: 139, I: 11, R: 0
-Timestep: 83
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 84
-Population size: 150
-S: 139, I: 11, R: 0
-Timestep: 84
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 85
-Population size: 150
-S: 139, I: 11, R: 0
-Timestep: 85
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 86
-Population size: 150
-S: 139, I: 11, R: 0
-Timestep: 86
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 87
-Population size: 150
-S: 139, I: 11, R: 0
-Timestep: 87
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 88
-Population size: 150
-S: 139, I: 11, R: 0
-Timestep: 88
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 89
-Population size: 150
-S: 139, I: 11, R: 0
-Timestep: 89
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 90
-Population size: 150
-S: 138, I: 12, R: 0
-Timestep: 90
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 91
-Population size: 150
-S: 137, I: 13, R: 0
-Timestep: 91
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 92
-Population size: 150
-S: 136, I: 14, R: 0
-Timestep: 92
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 93
-Population size: 150
-S: 136, I: 14, R: 0
-Timestep: 93
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 94
-Population size: 150
-S: 136, I: 14, R: 0
-Timestep: 94
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 95
-Population size: 150
-S: 136, I: 14, R: 0
-Timestep: 95
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 96
-Population size: 150
-S: 136, I: 14, R: 0
-Timestep: 96
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 97
-Population size: 150
-S: 136, I: 14, R: 0
-Timestep: 97
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 98
-Population size: 150
-S: 136, I: 14, R: 0
-Timestep: 98
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 99
-Population size: 150
-S: 136, I: 14, R: 0
-Timestep: 99
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 100
-Population size: 150
-S: 136, I: 14, R: 0
-Timestep: 100
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 101
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 101
+Population size: 250
+S: 238, I: 12, R: 0
 Timestep: 102
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 102
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 103
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 103
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 104
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 104
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 105
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 105
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 106
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 106
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 107
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 107
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 108
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 108
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 109
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 109
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 110
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 110
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 111
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 111
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 112
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 112
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 113
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 113
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 114
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 114
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 115
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 115
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 116
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 116
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 117
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 117
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 118
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 118
+Population size: 250
+S: 237, I: 13, R: 0
 Timestep: 119
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 119
+Population size: 250
+S: 236, I: 14, R: 0
 Timestep: 120
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 120
+Population size: 250
+S: 236, I: 14, R: 0
 Timestep: 121
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 121
+Population size: 250
+S: 236, I: 14, R: 0
 Timestep: 122
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 122
+Population size: 250
+S: 236, I: 14, R: 0
 Timestep: 123
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 123
+Population size: 250
+S: 236, I: 14, R: 0
 Timestep: 124
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 124
+Population size: 250
+S: 236, I: 14, R: 0
 Timestep: 125
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 125
+Population size: 250
+S: 236, I: 14, R: 0
 Timestep: 126
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 126
+Population size: 250
+S: 236, I: 14, R: 0
 Timestep: 127
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 127
+Population size: 250
+S: 236, I: 14, R: 0
 Timestep: 128
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 128
+Population size: 250
+S: 236, I: 14, R: 0
 Timestep: 129
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 129
+Population size: 250
+S: 236, I: 14, R: 0
 Timestep: 130
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 130
+Population size: 250
+S: 236, I: 14, R: 0
 Timestep: 131
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 131
+Population size: 250
+S: 234, I: 16, R: 0
 Timestep: 132
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 132
+Population size: 250
+S: 232, I: 18, R: 0
 Timestep: 133
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 133
+Population size: 250
+S: 227, I: 23, R: 0
 Timestep: 134
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 134
+Population size: 250
+S: 227, I: 23, R: 0
 Timestep: 135
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 135
+Population size: 250
+S: 226, I: 24, R: 0
 Timestep: 136
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 136
+Population size: 250
+S: 222, I: 28, R: 0
 Timestep: 137
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 137
+Population size: 250
+S: 220, I: 30, R: 0
 Timestep: 138
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 138
+Population size: 250
+S: 219, I: 31, R: 0
 Timestep: 139
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 139
+Population size: 250
+S: 218, I: 32, R: 0
 Timestep: 140
-Population size: 150
-S: 135, I: 15, R: 0
-Timestep: 140
+Population size: 250
+S: 217, I: 33, R: 0
+Timestep: 141
+Population size: 250
+S: 217, I: 33, R: 0
+Timestep: 142
+Population size: 250
+S: 217, I: 33, R: 0
+Timestep: 143
+Population size: 250
+S: 217, I: 33, R: 0
+Timestep: 144
+Population size: 250
+S: 217, I: 33, R: 0
+Timestep: 145
+Population size: 250
+S: 216, I: 34, R: 0
+Timestep: 146
+Population size: 250
+S: 216, I: 34, R: 0
+Timestep: 147
+Population size: 250
+S: 215, I: 35, R: 0
+Timestep: 148
+Population size: 250
+S: 215, I: 35, R: 0
+Timestep: 149
+Population size: 250
+S: 215, I: 35, R: 0
+Timestep: 150
+Population size: 250
+S: 215, I: 35, R: 0
+Timestep: 151
+Population size: 250
+S: 215, I: 35, R: 0
+Timestep: 152
+Population size: 250
+S: 215, I: 35, R: 0
+Timestep: 153
+Population size: 250
+S: 215, I: 35, R: 0
+Timestep: 154
+Population size: 250
+S: 215, I: 35, R: 0
+Timestep: 155
+Population size: 250
+S: 213, I: 37, R: 0
+Timestep: 156
+Population size: 250
+S: 213, I: 37, R: 0
+Timestep: 157
+Population size: 250
+S: 209, I: 41, R: 0
+Timestep: 158
+Population size: 250
+S: 208, I: 42, R: 0
+Timestep: 159
+Population size: 250
+S: 206, I: 44, R: 0
+Timestep: 160
+Population size: 250
+S: 206, I: 44, R: 0
+Timestep: 161
+Population size: 250
+S: 206, I: 44, R: 0
+Timestep: 162
+Population size: 250
+S: 202, I: 48, R: 0
+Timestep: 163
+Population size: 250
+S: 201, I: 49, R: 0
+Timestep: 164
+Population size: 250
+S: 201, I: 49, R: 0
+Timestep: 165
+Population size: 250
+S: 201, I: 49, R: 0
+Timestep: 166
+Population size: 250
+S: 200, I: 50, R: 0
+Timestep: 167
+Population size: 250
+S: 200, I: 50, R: 0
+Timestep: 168
+Population size: 250
+S: 198, I: 52, R: 0
+Timestep: 169
+Population size: 250
+S: 197, I: 53, R: 0
+Timestep: 170
+Population size: 250
+S: 196, I: 54, R: 0
+Timestep: 171
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 172
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 173
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 174
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 175
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 176
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 177
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 178
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 179
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 180
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 181
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 182
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 183
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 184
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 185
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 186
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 187
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 188
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 189
+Population size: 250
+S: 194, I: 56, R: 0
+Timestep: 190
+Population size: 250
+S: 193, I: 57, R: 0
+Timestep: 191
+Population size: 250
+S: 193, I: 57, R: 0
+Timestep: 192
+Population size: 250
+S: 193, I: 57, R: 0
+Timestep: 193
+Population size: 250
+S: 193, I: 57, R: 0
+Timestep: 194
+Population size: 250
+S: 192, I: 58, R: 0
+Timestep: 195
+Population size: 250
+S: 192, I: 58, R: 0
+Timestep: 196
+Population size: 250
+S: 192, I: 58, R: 0
+Timestep: 197
+Population size: 250
+S: 192, I: 58, R: 0
+Timestep: 198
+Population size: 250
+S: 191, I: 59, R: 0
+Timestep: 199
+Population size: 250
+S: 191, I: 59, R: 0
+Timestep: 200
+Population size: 250
+S: 191, I: 59, R: 0
+Timestep: 201
+Population size: 250
+S: 191, I: 59, R: 0
+Timestep: 202
+Population size: 250
+S: 191, I: 59, R: 0
+Timestep: 203
+Population size: 250
+S: 191, I: 59, R: 0
+Timestep: 204
+Population size: 250
+S: 191, I: 59, R: 0
+Timestep: 205
+Population size: 250
+S: 191, I: 59, R: 0
+Timestep: 206
+Population size: 250
+S: 190, I: 60, R: 0
+Timestep: 207
+Population size: 250
+S: 190, I: 60, R: 0
+Timestep: 208
+Population size: 250
+S: 189, I: 61, R: 0
+Timestep: 209
+Population size: 250
+S: 189, I: 61, R: 0
+Timestep: 210
+Population size: 250
+S: 189, I: 61, R: 0
+Timestep: 211
+Population size: 250
+S: 189, I: 61, R: 0
+Timestep: 212
+Population size: 250
+S: 189, I: 61, R: 0
+Timestep: 213
+Population size: 250
+S: 189, I: 61, R: 0
+Timestep: 214
+Population size: 250
+S: 189, I: 61, R: 0
+Timestep: 215
+Population size: 250
+S: 188, I: 62, R: 0
+Timestep: 216
+Population size: 250
+S: 186, I: 64, R: 0
+Timestep: 217
+Population size: 250
+S: 184, I: 66, R: 0
+Timestep: 218
+Population size: 250
+S: 183, I: 67, R: 0
+Timestep: 219
+Population size: 250
+S: 183, I: 67, R: 0
+Timestep: 220
+Population size: 250
+S: 183, I: 67, R: 0
+Timestep: 221
+Population size: 250
+S: 183, I: 67, R: 0
+Timestep: 222
+Population size: 250
+S: 183, I: 67, R: 0
+Timestep: 223
+Population size: 250
+S: 182, I: 68, R: 0
+Timestep: 224
+Population size: 250
+S: 182, I: 68, R: 0
+Timestep: 225
+Population size: 250
+S: 182, I: 68, R: 0
+Timestep: 226
+Population size: 250
+S: 182, I: 68, R: 0
+Timestep: 227
+Population size: 250
+S: 180, I: 70, R: 0
+Timestep: 228
+Population size: 250
+S: 180, I: 70, R: 0
+Timestep: 229
+Population size: 250
+S: 180, I: 70, R: 0
+Timestep: 230
+Population size: 250
+S: 180, I: 70, R: 0
+Timestep: 231
+Population size: 250
+S: 180, I: 70, R: 0
+Timestep: 232
+Population size: 250
+S: 180, I: 70, R: 0
+Timestep: 233
+Population size: 250
+S: 180, I: 70, R: 0
+Timestep: 234
+Population size: 250
+S: 179, I: 71, R: 0
+Timestep: 235
+Population size: 250
+S: 175, I: 75, R: 0
+Timestep: 236
+Population size: 250
+S: 174, I: 76, R: 0
+Timestep: 237
+Population size: 250
+S: 173, I: 77, R: 0
+Timestep: 238
+Population size: 250
+S: 173, I: 77, R: 0
+Timestep: 239
+Population size: 250
+S: 173, I: 77, R: 0
+Timestep: 240
+Population size: 250
+S: 173, I: 77, R: 0
+Timestep: 241
+Population size: 250
+S: 173, I: 77, R: 0
+Timestep: 242
+Population size: 250
+S: 172, I: 78, R: 0
+Timestep: 243
+Population size: 250
+S: 172, I: 78, R: 0
+Timestep: 244
+Population size: 250
+S: 169, I: 81, R: 0
+Timestep: 245
+Population size: 250
+S: 168, I: 82, R: 0
+Timestep: 246
+Population size: 250
+S: 168, I: 82, R: 0
+Timestep: 247
+Population size: 250
+S: 167, I: 83, R: 0
+Timestep: 248
+Population size: 250
+S: 167, I: 83, R: 0
+Timestep: 249
+Population size: 250
+S: 166, I: 84, R: 0
+Timestep: 250
+Population size: 250
+S: 166, I: 84, R: 0
+Timestep: 251
+Population size: 250
+S: 166, I: 84, R: 0
+Timestep: 252
+Population size: 250
+S: 166, I: 84, R: 0
+Timestep: 253
+Population size: 250
+S: 166, I: 84, R: 0
+Timestep: 254
+Population size: 250
+S: 166, I: 84, R: 0
+Timestep: 255
+Population size: 250
+S: 166, I: 84, R: 0
+Timestep: 256
+Population size: 250
+S: 166, I: 84, R: 0
+Timestep: 257
+Population size: 250
+S: 166, I: 84, R: 0
+Timestep: 258
+Population size: 250
+S: 166, I: 84, R: 0
+Timestep: 259
+Population size: 250
+S: 163, I: 87, R: 0
+Timestep: 260
+Population size: 250
+S: 161, I: 89, R: 0
+Timestep: 261
+Population size: 250
+S: 161, I: 89, R: 0
+Timestep: 262
+Population size: 250
+S: 161, I: 89, R: 0
+Timestep: 263
+Population size: 250
+S: 161, I: 89, R: 0
+Timestep: 264
+Population size: 250
+S: 161, I: 89, R: 0
+Timestep: 265
+Population size: 250
+S: 160, I: 90, R: 0
+Timestep: 266
+Population size: 250
+S: 160, I: 90, R: 0
+Timestep: 267
+Population size: 250
+S: 158, I: 92, R: 0
