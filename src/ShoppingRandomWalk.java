@@ -15,6 +15,12 @@ public class ShoppingRandomWalk extends RandomWalk {
     this.lastLocation = null;
   }
 
+  ShoppingRandomWalk() {
+    super();
+    this.stationaryDuration = 0;
+    this.lastLocation = null;
+  }
+
 
   @Override
   public void move() {

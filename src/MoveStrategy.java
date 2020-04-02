@@ -8,4 +8,10 @@ public interface MoveStrategy extends Strategy {
    */
   void move();
 
+  /**
+   * Method to set a given MoveStrategy's Person field.
+   */
+  void setPerson(Person p);
+
+
 }

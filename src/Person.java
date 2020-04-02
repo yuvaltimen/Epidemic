@@ -29,6 +29,7 @@ public class Person {
     }
     this.timeInfected = 0;
     this.moveStrategy = moveStrategy;
+    this.moveStrategy.setPerson(this);
   }
 
 

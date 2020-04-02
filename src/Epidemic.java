@@ -29,24 +29,34 @@ public class Epidemic extends PApplet {
     Objects.requireNonNull(fileWriter);
     Objects.requireNonNull(stringWriter);
 
-
-    if (useMarket) {
-      this.updateStrategy = new UpdateWithMarket(this);
-    } else {
-      this.updateStrategy = new UpdateWithoutMarket(this);
-    }
-
-    //TODO: Cyclic dependency of MoveStrategy and Person
     this.fileWriter = fileWriter;
     this.stringWriter = stringWriter;
     this.population = new HashSet<>();
-    for (int i = 0; i < Constants.N; i++) {
-      float x = Constants.WIDTH * Constants.random.nextFloat();
-      float y = Constants.HEIGHT * Constants.random.nextFloat();
-      float vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
-      float vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
-      this.population.add(new Person(this, x, y, vx, vy));
+
+
+    if (useMarket) {
+      this.updateStrategy = new UpdateWithMarket(this);
+      for (int i = 0; i < Constants.N; i++) {
+        float x = Constants.WIDTH * Constants.random.nextFloat();
+        float y = Constants.HEIGHT * Constants.random.nextFloat();
+        float vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
+        float vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
+        this.population.add(new Person(this, new ShoppingRandomWalk() , x, y, vx, vy));
+      }
+    } else {
+      this.updateStrategy = new UpdateWithoutMarket(this);
+      for (int i = 0; i < Constants.N; i++) {
+        float x = Constants.WIDTH * Constants.random.nextFloat();
+        float y = Constants.HEIGHT * Constants.random.nextFloat();
+        float vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
+        float vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
+        this.population.add(new Person(this, new RandomWalk(), x, y, vx, vy));
+      }
     }
+    //TODO: Cyclic dependency of MoveStrategy and Person
+
+
+
     this.market = new Posn(Constants.HALF_WIDTH, Constants.HALF_HEIGHT);
     this.timeStep = 0;
 

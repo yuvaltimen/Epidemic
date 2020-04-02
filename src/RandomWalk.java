@@ -8,6 +8,10 @@ public class RandomWalk extends AbstractMove {
     super(person);
   }
 
+  RandomWalk() {
+    super();
+  }
+
   /**
    * Updates the Person's position and velocity.
    */
