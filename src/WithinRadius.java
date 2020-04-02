@@ -1,5 +1,8 @@
 import java.util.function.Predicate;
 
+/**
+ * Distance metric which measures if a given Posn is within some finite distance 'radius'.
+ */
 public class WithinRadius implements Predicate<Posn> {
 
 
@@ -12,11 +15,11 @@ public class WithinRadius implements Predicate<Posn> {
   }
 
   /**
-   * Evaluates this predicate on the given argument.
+   * Determines if the given Posn's distance from this Posn is at most 'radius' away.
    *
-   * @param posn the input argument
-   * @return {@code true} if the input argument matches the predicate,
-   * otherwise {@code false}
+   * @param posn The given Posn.
+   * @return {@code true} if posn is at most 'radius' close to this Porn.
+   * otherwise {@code false}.
    */
   @Override
   public boolean test(Posn posn) {

@@ -1,3 +1,6 @@
+/**
+ * Utils class for miscellaneous calculations.
+ */
 public class Utils {
 
   /**

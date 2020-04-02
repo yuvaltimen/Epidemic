@@ -14,7 +14,7 @@ public class Person {
   Constants.Status status;
   int stationaryDuration;
   Posn lastLocation;
-
+  MoveStrategy moveStrategy;
 
 
   Person(Epidemic sketch, float x, float y, float vx, float vy) {
@@ -30,6 +30,7 @@ public class Person {
     }
     this.timeInfected = 0;
     this.stationaryDuration = 0;
+//    this.moveStrategy = new RandomWalk(this);
   }
 
 
@@ -57,15 +58,14 @@ public class Person {
       epidemic.noFill();
       this.epidemic.ellipse(this.position.x, this.position.y, Constants.INFECTION_RADIUS, Constants.INFECTION_RADIUS);
     }
-
-
   }
 
 
   /**
-   * Updates the Person's fields.
+   * Updates the Person's fields on each tick.
    */
   void update() {
+//    this.moveStrategy.move();
     this.move();
     this.updateStatus();
   }
@@ -83,7 +83,6 @@ public class Person {
       return;
     }
 
-
     // TODO: How to keep people in an area for a time
     if (Constants.random.nextFloat() <= Constants.PROBABILITY_OF_SHOPPING) {
       this.position.update(Constants.HALF_WIDTH, Constants.HALF_HEIGHT);
@@ -92,13 +91,9 @@ public class Person {
       return;
     }
 
-
     if (!this.position.equals(this.lastLocation)) {
       this.position.update(this.lastLocation);
     }
-
-
-
 
     float vx;
     float vy;

@@ -16,7 +16,7 @@ public class Epidemic extends PApplet {
   Collection<Person> population;
   Posn market;
   int timeStep;
-  UpdateStrategy drawStrategy;
+  UpdateStrategy updateStrategy;
 
   /**
    * Has a population, which evolve under certain rules for each timestep:
@@ -42,11 +42,10 @@ public class Epidemic extends PApplet {
     this.market = new Posn(Constants.HALF_WIDTH, Constants.HALF_HEIGHT);
     this.timeStep = 0;
     if (useMarket) {
-      this.drawStrategy = new UpdateWithMarket(this);
+      this.updateStrategy = new UpdateWithMarket(this);
     } else {
-      this.drawStrategy = new UpdateWithoutMarket(this);
+      this.updateStrategy = new UpdateWithoutMarket(this);
     }
-
   }
 
 
@@ -83,9 +82,7 @@ public class Epidemic extends PApplet {
     Epidemic build() {
       return new Epidemic(this.fileWriter, this.stringWriter, this.useMarket);
     }
-
   }
-
 
 
   /**
@@ -157,9 +154,9 @@ public class Epidemic extends PApplet {
    */
   @Override
   public void setup() {
-//    frameRate(3);
     background(50);
   }
+
 
   /**
    * Draws the current scene to display.
@@ -173,7 +170,7 @@ public class Epidemic extends PApplet {
       e.printStackTrace();
     }
 
-    this.drawStrategy.update();
+    this.updateStrategy.update();
     this.timeStep++;
   }
 
@@ -200,7 +197,6 @@ public class Epidemic extends PApplet {
             .useMarket(false)
             .build();
     PApplet.runSketch(processingArgs, epidemic);
-
   }
 }
 
