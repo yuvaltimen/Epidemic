@@ -12,7 +12,7 @@ public interface Constants {
   Double PROBABILITY_OF_INFECTION =  0.2;
   int WIDTH = 900;
   int HEIGHT = 700;
-  int RECOVERY_TIME = 400;
+  int RECOVERY_TIME = 200;
   float PROBABILITY_OF_SHOPPING = 0.005f;
 
 
