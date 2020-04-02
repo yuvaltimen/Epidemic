@@ -12,12 +12,11 @@ public class Person {
   Posn velocity;
   int timeInfected;
   Constants.Status status;
-  int stationaryDuration;
   Posn lastLocation;
   MoveStrategy moveStrategy;
 
 
-  Person(Epidemic sketch, float x, float y, float vx, float vy) {
+  Person(Epidemic sketch, MoveStrategy moveStrategy, float x, float y, float vx, float vy) {
     this.epidemic = sketch;
     this.position = new Posn(x, y);
     this.lastLocation = new Posn(x, y);
@@ -29,8 +28,7 @@ public class Person {
       this.status = Constants.Status.SUCCEPTIBLE;
     }
     this.timeInfected = 0;
-    this.stationaryDuration = 0;
-//    this.moveStrategy = new RandomWalk(this);
+    this.moveStrategy = moveStrategy;
   }
 
 
@@ -65,59 +63,11 @@ public class Person {
    * Updates the Person's fields on each tick.
    */
   void update() {
-//    this.moveStrategy.move();
-    this.move();
+    this.moveStrategy.move();
+    // TODO: UpdateStatus --> strategy
     this.updateStatus();
   }
 
-
-  /**
-   * Updates the person's position and velocity.
-   * Standard Random Walk - pick a random x and y velocity from {-1, 0, 1} each time.
-   * Has a random chance of getting transported to the middle (market) for some time steps.
-   */
-  void move() {
-
-    if (this.stationaryDuration > 0) {
-      this.stationaryDuration--;
-      return;
-    }
-
-    // TODO: How to keep people in an area for a time
-    if (Constants.random.nextFloat() <= Constants.PROBABILITY_OF_SHOPPING) {
-      this.position.update(Constants.HALF_WIDTH, Constants.HALF_HEIGHT);
-      this.velocity.update(0, 0);
-      this.stationaryDuration = 3;
-      return;
-    }
-
-    if (!this.position.equals(this.lastLocation)) {
-      this.position.update(this.lastLocation);
-    }
-
-    float vx;
-    float vy;
-
-    if (this.position.x >= Constants.WIDTH - this.r) {
-      vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (-Constants.MIN_VELOCITY));
-    } else if (this.position.x <= this.r) {
-      vx = (Constants.random.nextFloat() * Constants.MAX_VELOCITY);
-    } else {
-      vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
-    }
-
-    if (this.position.y >= Constants.HEIGHT - this.r) {
-      vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (-Constants.MIN_VELOCITY));
-    } else if (this.position.y <= this.r) {
-      vy = (Constants.random.nextFloat() * Constants.MAX_VELOCITY);
-    } else {
-      vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
-    }
-
-    this.position.add(this.velocity);
-    this.velocity.update(vx, vy);
-    this.lastLocation.update(this.position);
-  }
 
   /**
    * SUCCEPTIBLE - gets infected with probability q if in some radius R of a sick person.

@@ -24,11 +24,19 @@ public class Epidemic extends PApplet {
    * 2 - Velocity is randomly changed by some function of velocity and position.
    * 3 -
    */
-  Epidemic(Writer fileWriter, Writer stringWriter, boolean useMarket) {
+  private Epidemic(Writer fileWriter, Writer stringWriter, boolean useMarket) {
 
     Objects.requireNonNull(fileWriter);
     Objects.requireNonNull(stringWriter);
 
+
+    if (useMarket) {
+      this.updateStrategy = new UpdateWithMarket(this);
+    } else {
+      this.updateStrategy = new UpdateWithoutMarket(this);
+    }
+
+    //TODO: Cyclic dependency of MoveStrategy and Person
     this.fileWriter = fileWriter;
     this.stringWriter = stringWriter;
     this.population = new HashSet<>();
@@ -41,14 +49,15 @@ public class Epidemic extends PApplet {
     }
     this.market = new Posn(Constants.HALF_WIDTH, Constants.HALF_HEIGHT);
     this.timeStep = 0;
-    if (useMarket) {
-      this.updateStrategy = new UpdateWithMarket(this);
-    } else {
-      this.updateStrategy = new UpdateWithoutMarket(this);
-    }
+
   }
 
 
+  /**
+   * Implementation of the builder pattern.
+   * Each method returns an instance of the builder, to support chaining.
+   * Finally, the build method returns an instance of the Epidemic.
+   */
   static class EpidemicBuilder {
 
     Writer fileWriter;
@@ -56,13 +65,11 @@ public class Epidemic extends PApplet {
     Boolean useMarket;
 
 
-
     EpidemicBuilder() {
       this.fileWriter = null;
       this.stringWriter = null;
       this.useMarket = null;
     }
-
 
     EpidemicBuilder updateFileWriter(Writer fw) {
       this.fileWriter = fw;
@@ -80,6 +87,9 @@ public class Epidemic extends PApplet {
     }
 
     Epidemic build() {
+      if (this.fileWriter == null || this.stringWriter == null || this.useMarket == null) {
+        throw new IllegalStateException("Fields cannot be null");
+      }
       return new Epidemic(this.fileWriter, this.stringWriter, this.useMarket);
     }
   }
@@ -159,7 +169,9 @@ public class Epidemic extends PApplet {
 
 
   /**
-   * Draws the current scene to display.
+   * First, commits a message to the logbook.
+   * Then, updates the Epidemic based on its updateStrategy object.
+   * Finally, increments the time step.
    */
   @Override
   public void draw() {
@@ -188,7 +200,6 @@ public class Epidemic extends PApplet {
     }
 
     StringWriter sw = new StringWriter();
-
 
     String[] processingArgs = {"Epidemic"};
     Epidemic epidemic = new EpidemicBuilder()

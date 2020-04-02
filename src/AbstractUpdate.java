@@ -4,7 +4,7 @@
  * Subclassed by UpdateWithMarket and UpdateWithoutMarket, to differentiate between
  * simulating an epidemic with a central marketplace or not.
  */
-public class AbstractUpdate implements UpdateStrategy {
+public abstract class AbstractUpdate implements UpdateStrategy {
 
   Epidemic epidemic;
 

@@ -18,7 +18,7 @@ public class WithinRadius implements Predicate<Posn> {
    * Determines if the given Posn's distance from this Posn is at most 'radius' away.
    *
    * @param posn The given Posn.
-   * @return {@code true} if posn is at most 'radius' close to this Porn.
+   * @return {@code true} if posn is at most 'radius' close to this Posn.
    * otherwise {@code false}.
    */
   @Override
