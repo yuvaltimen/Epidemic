@@ -20,7 +20,7 @@ public abstract class AbstractUpdate implements UpdateStrategy {
   public void update() {
     this.epidemic.background(50);
     for (Person p : this.epidemic.population) {
-      p.render();
+      p.renderStrategy.render();
       p.update();
     }
 

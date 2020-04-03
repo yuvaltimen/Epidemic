@@ -7,16 +7,15 @@ import java.util.stream.Collectors;
 public class Person {
 
   Epidemic epidemic;
-  float r = Constants.RADIUS;
   Posn position;
   Posn velocity;
   int timeInfected;
   Constants.Status status;
   Posn lastLocation;
   MoveStrategy moveStrategy;
+  RenderStrategy renderStrategy;
 
-
-  Person(Epidemic sketch, MoveStrategy moveStrategy, float x, float y, float vx, float vy) {
+  Person(Epidemic sketch, MoveStrategy moveStrategy, RenderStrategy renderStrategy, float x, float y, float vx, float vy) {
     this.epidemic = sketch;
     this.position = new Posn(x, y);
     this.lastLocation = new Posn(x, y);
@@ -25,38 +24,13 @@ public class Person {
     if (s) {
       this.status = Constants.Status.INFECTED;
     } else {
-      this.status = Constants.Status.SUCCEPTIBLE;
+      this.status = Constants.Status.SUSCEPTIBLE;
     }
     this.timeInfected = 0;
     this.moveStrategy = moveStrategy;
     this.moveStrategy.setPerson(this);
-  }
-
-
-  /**
-   * Draws the image of the given person.
-   * @return WorldImage representing the person.
-   */
-  void render() {
-    switch (this.status) {
-      case SUCCEPTIBLE:
-        this.epidemic.fill(0, 255, 0);
-        break;
-      case INFECTED:
-        this.epidemic.fill(255, 0, 0);
-        break;
-      case REMOVED:
-        this.epidemic.fill(128,128,128);
-        break;
-      default:
-        throw new IllegalStateException(String.format("Invalid state: {}", this.status));
-    }
-    this.epidemic.ellipse(this.position.x, this.position.y, Constants.RADIUS, Constants.RADIUS);
-
-    if (this.status == Constants.Status.INFECTED) {
-      epidemic.noFill();
-      this.epidemic.ellipse(this.position.x, this.position.y, Constants.INFECTION_RADIUS, Constants.INFECTION_RADIUS);
-    }
+    this.renderStrategy = renderStrategy;
+    this.renderStrategy.setPerson(this);
   }
 
 
@@ -71,7 +45,7 @@ public class Person {
 
 
   /**
-   * SUCCEPTIBLE - gets infected with probability q if in some radius R of a sick person.
+   * SUSCEPTIBLE - gets infected with probability q if in some radius R of a sick person.
    * INFECTED - gets removed after some time T.
    * REMOVED - stays that way.
    */
@@ -80,7 +54,7 @@ public class Person {
     switch (this.status) {
 
       // If you are succeptible, then each person near you has a Q chance of infecting you.
-      case SUCCEPTIBLE:
+      case SUSCEPTIBLE:
 
         List<Person> infectedNearby = this.epidemic.population.stream()
                 .filter(person -> new WithinRadius(Constants.INFECTION_RADIUS, this.position).test(person.position))

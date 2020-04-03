@@ -4,22 +4,10 @@
 public class Utils {
 
   /**
-   * Calculates the sigmoid of the given input.
-   * @param inp float from 0 -> infinity.
-   * @return sigmoid of input.
+   * Inverse transform sampling for an exponential distribution with rate parameter lambda.
    */
-  static float sigmoid(float inp) {
-    if (inp < 0) {
-      throw new IllegalArgumentException(String.format("Negative input: {}", inp));
-    }
-
-    return 1/ (1 + (float)Math.exp(-inp));
+  static float sampleExponential(float lambda) {
+    return (float)(Math.log(1 - Constants.random.nextFloat()) / (-lambda));
   }
-
-  // TODO: Implement shifted sigmoid
-//  static float mapTo(float input, float lower, float upper) {
-//    float ans =
-//    return ans;
-//  }
 
 }

@@ -13,5 +13,4 @@ public interface MoveStrategy extends Strategy {
    */
   void setPerson(Person p);
 
-
 }

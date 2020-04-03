@@ -14,7 +14,6 @@ public class Epidemic extends PApplet {
   Writer fileWriter;
   Writer stringWriter;
   Collection<Person> population;
-  Posn market;
   int timeStep;
   UpdateStrategy updateStrategy;
 
@@ -32,34 +31,9 @@ public class Epidemic extends PApplet {
     this.fileWriter = fileWriter;
     this.stringWriter = stringWriter;
     this.population = new HashSet<>();
-
-
-    if (useMarket) {
-      this.updateStrategy = new UpdateWithMarket(this);
-      for (int i = 0; i < Constants.N; i++) {
-        float x = Constants.WIDTH * Constants.random.nextFloat();
-        float y = Constants.HEIGHT * Constants.random.nextFloat();
-        float vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
-        float vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
-        this.population.add(new Person(this, new ShoppingRandomWalk() , x, y, vx, vy));
-      }
-    } else {
-      this.updateStrategy = new UpdateWithoutMarket(this);
-      for (int i = 0; i < Constants.N; i++) {
-        float x = Constants.WIDTH * Constants.random.nextFloat();
-        float y = Constants.HEIGHT * Constants.random.nextFloat();
-        float vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
-        float vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
-        this.population.add(new Person(this, new RandomWalk(), x, y, vx, vy));
-      }
-    }
-    //TODO: Cyclic dependency of MoveStrategy and Person
-
-
-
-    this.market = new Posn(Constants.HALF_WIDTH, Constants.HALF_HEIGHT);
     this.timeStep = 0;
 
+    this.createPopulation(useMarket);
   }
 
 
@@ -106,6 +80,32 @@ public class Epidemic extends PApplet {
 
 
   /**
+   * Creates the population based on the given parameters.
+   */
+  void createPopulation(boolean useMarket) {
+
+    if (useMarket) {
+      this.updateStrategy = new UpdateWithMarket(this);
+      for (int i = 0; i < Constants.NUMBER_OF_PEOPLE; i++) {
+        float x = Constants.SCREEN_WIDTH * Constants.random.nextFloat();
+        float y = Constants.SCREEN_HEIGHT * Constants.random.nextFloat();
+        float vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
+        float vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
+        this.population.add(new Person(this, new ShoppingRandomWalk(), new CircleRender(), x, y, vx, vy));
+      }
+    } else {
+      this.updateStrategy = new UpdateWithoutMarket(this);
+      for (int i = 0; i < Constants.NUMBER_OF_PEOPLE; i++) {
+        float x = Constants.SCREEN_WIDTH * Constants.random.nextFloat();
+        float y = Constants.SCREEN_HEIGHT * Constants.random.nextFloat();
+        float vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
+        float vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
+        this.population.add(new Person(this, new RandomWalk(), new CircleRender(), x, y, vx, vy));
+      }
+    }
+  }
+
+  /**
    * Overrides exit method - this is to ensure that log data is written to file before exit.
    */
   @Override
@@ -142,7 +142,7 @@ public class Epidemic extends PApplet {
     int r = 0;
 
     for (Person p : this.population) {
-      if (p.status == Constants.Status.SUCCEPTIBLE) {
+      if (p.status == Constants.Status.SUSCEPTIBLE) {
         s++;
       } else if (p.status == Constants.Status.INFECTED) {
         i++;
@@ -152,7 +152,7 @@ public class Epidemic extends PApplet {
     }
 
     sb.append("Timestep: " + this.timeStep + "\n");
-    sb.append("Population size: " + Constants.N + "\n");
+    sb.append("Population size: " + Constants.NUMBER_OF_PEOPLE + "\n");
     sb.append("S: " + s + ", I: " + i + ", R: " + r + "\n");
 
     return sb.toString();
@@ -165,7 +165,7 @@ public class Epidemic extends PApplet {
    */
   @Override
   public void settings() {
-    size(Constants.WIDTH, Constants.HEIGHT);
+    size(Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
   }
 
 
@@ -201,6 +201,7 @@ public class Epidemic extends PApplet {
    * Main entry point to program.
    */
   public static void main(String[] args) {
+
 
     FileWriter fw = null;
     try {

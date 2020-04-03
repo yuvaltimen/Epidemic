@@ -4,10 +4,6 @@
  */
 public class RandomWalk extends AbstractMove {
 
-  RandomWalk(Person person) {
-    super(person);
-  }
-
   RandomWalk() {
     super();
   }
@@ -21,17 +17,17 @@ public class RandomWalk extends AbstractMove {
     float vx;
     float vy;
 
-    if (this.person.position.x >= Constants.WIDTH - this.person.r) {
+    if (this.person.position.x >= Constants.SCREEN_WIDTH - Constants.RADIUS) {
       vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (-Constants.MIN_VELOCITY));
-    } else if (this.person.position.x <= this.person.r) {
+    } else if (this.person.position.x <= Constants.RADIUS) {
       vx = (Constants.random.nextFloat() * Constants.MAX_VELOCITY);
     } else {
       vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
     }
 
-    if (this.person.position.y >= Constants.HEIGHT - this.person.r) {
+    if (this.person.position.y >= Constants.SCREEN_HEIGHT - Constants.RADIUS) {
       vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (-Constants.MIN_VELOCITY));
-    } else if (this.person.position.y <= this.person.r) {
+    } else if (this.person.position.y <= Constants.RADIUS) {
       vy = (Constants.random.nextFloat() * Constants.MAX_VELOCITY);
     } else {
       vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));

@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30b4e104-10bb-4db4-97b4-99150a9f6bcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AbstractMove.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RandomWalk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ShoppingRandomWalk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CircleRender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RenderStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AbstractUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AbstractUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Epidemic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Epidemic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MoveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoveStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WithinRadius.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WithinRadius.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomWalk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomWalk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShoppingRandomWalk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShoppingRandomWalk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UpdateWithMarket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UpdateWithMarket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,34 +26,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Epidemic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="40" column="66" lean-forward="true" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+            <state relative-caret-position="368">
+              <caret line="42" column="90" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4678#4679#0" expanded="true" />
-                <element signature="e#4812#4813#0" expanded="true" />
+                <element signature="e#4467#4468#0" expanded="true" />
+                <element signature="e#4516#4517#0" expanded="true" />
+                <element signature="e#4626#4627#0" expanded="true" />
+                <element signature="e#4650#4651#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UpdateStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -59,39 +42,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UpdateWithMarket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <state relative-caret-position="375">
+              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Posn.java">
+        <entry file="file://$PROJECT_DIR$/src/CircleRender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            <state relative-caret-position="90">
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
               <folding>
-                <element signature="e#886#887#0" expanded="true" />
-                <element signature="e#935#936#0" expanded="true" />
+                <element signature="e#140#141#0" expanded="true" />
+                <element signature="e#165#166#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WithinRadius.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MoveStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -99,38 +64,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RandomWalk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="90">
+              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
               <folding>
-                <element signature="e#89#90#0" expanded="true" />
-                <element signature="e#106#107#0" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#224#225#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Posn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+              <folding>
+                <element signature="e#993#994#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ShoppingRandomWalk.java">
+        <entry file="file://$PROJECT_DIR$/src/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="495">
+              <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AbstractMove.java">
+        <entry file="file://$PROJECT_DIR$/src/RenderStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-              <folding>
-                <element signature="e#103#104#0" expanded="true" />
-                <element signature="e#132#133#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#420#421#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -163,7 +152,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/Graph.java" />
         <option value="$PROJECT_DIR$/src/AbstractEpidemic.java" />
-        <option value="$PROJECT_DIR$/src/Constants.java" />
         <option value="$PROJECT_DIR$/src/DrawStrategy.java" />
         <option value="$PROJECT_DIR$/src/AbstractDraw.java" />
         <option value="$PROJECT_DIR$/src/DrawWithMarket.java" />
@@ -171,17 +159,20 @@
         <option value="$PROJECT_DIR$/src/Strategy.java" />
         <option value="$PROJECT_DIR$/src/Posn.java" />
         <option value="$PROJECT_DIR$/src/UpdateStrategy.java" />
-        <option value="$PROJECT_DIR$/src/UpdateWithMarket.java" />
         <option value="$PROJECT_DIR$/src/UpdateWithoutMarket.java" />
-        <option value="$PROJECT_DIR$/src/Utils.java" />
         <option value="$PROJECT_DIR$/src/WithinRadius.java" />
         <option value="$PROJECT_DIR$/src/AbstractUpdate.java" />
         <option value="$PROJECT_DIR$/src/AbstractMove.java" />
+        <option value="$PROJECT_DIR$/src/UpdateWithMarket.java" />
         <option value="$PROJECT_DIR$/src/MoveStrategy.java" />
-        <option value="$PROJECT_DIR$/src/Person.java" />
-        <option value="$PROJECT_DIR$/src/RandomWalk.java" />
-        <option value="$PROJECT_DIR$/src/Epidemic.java" />
+        <option value="$PROJECT_DIR$/src/Utils.java" />
         <option value="$PROJECT_DIR$/src/ShoppingRandomWalk.java" />
+        <option value="$PROJECT_DIR$/src/RandomWalk.java" />
+        <option value="$PROJECT_DIR$/src/Constants.java" />
+        <option value="$PROJECT_DIR$/src/RenderStrategy.java" />
+        <option value="$PROJECT_DIR$/src/CircleRender.java" />
+        <option value="$PROJECT_DIR$/src/Epidemic.java" />
+        <option value="$PROJECT_DIR$/src/Person.java" />
       </list>
     </option>
   </component>
@@ -216,7 +207,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585862034865" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585921105518" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.28476822" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -269,14 +260,14 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2081545" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20958512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" weight="0.45421687" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.24216868" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -291,6 +282,34 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.20958512" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.45421687" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32891566" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.24216868" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/Downloads/Processing.app/Contents/Java/core.jar!/processing/core/PApplet.class">
@@ -349,77 +368,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Strategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UpdateWithoutMarket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="57" lean-forward="true" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-          <folding>
-            <element signature="e#113#114#0" expanded="true" />
-            <element signature="e#138#139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AbstractUpdate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UpdateStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Posn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-          <folding>
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UpdateWithMarket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -430,23 +382,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoveStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/UpdateStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="120">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RandomWalk.java">
+    <entry file="file://$PROJECT_DIR$/src/AbstractUpdate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="e#89#90#0" expanded="true" />
-            <element signature="e#106#107#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UpdateWithoutMarket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="57" lean-forward="true" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MoveStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -463,22 +423,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Epidemic.java">
+    <entry file="file://$PROJECT_DIR$/src/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="40" column="66" lean-forward="true" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+        <state relative-caret-position="150">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Posn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4678#4679#0" expanded="true" />
-            <element signature="e#4812#4813#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ShoppingRandomWalk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="150">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RandomWalk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="e#224#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RenderStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CircleRender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#165#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UpdateWithMarket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Epidemic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="42" column="90" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4467#4468#0" expanded="true" />
+            <element signature="e#4516#4517#0" expanded="true" />
+            <element signature="e#4626#4627#0" expanded="true" />
+            <element signature="e#4650#4651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
