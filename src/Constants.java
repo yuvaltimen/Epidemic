@@ -6,6 +6,7 @@ import java.util.Random;
 public interface Constants {
 
 
+
   /**
    *
    */
@@ -13,11 +14,15 @@ public interface Constants {
   /**
    * The radius at which to draw each Person as a circle.
    */
-  float RADIUS = 5;
+  float RADIUS = 7;
   /**
    * The radius at which each Person can transmit the disease.
    */
   float INFECTION_RADIUS = 20;
+  /**
+   *
+   */
+  float AVOIDANCE_RADIUS = INFECTION_RADIUS * 2f;
   /**
    * The percent of the population initially infected.
    */
@@ -53,7 +58,7 @@ public interface Constants {
   /**
    * Total number of people in the simulation.
    */
-  int NUMBER_OF_PEOPLE = 450;
+  int NUMBER_OF_PEOPLE = 250;
   /**
    * Random object to be used for RNG.
    */

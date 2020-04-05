@@ -33,7 +33,7 @@ public class RandomWalk extends AbstractMove {
       vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
     }
 
-    this.person.position.add(this.person.velocity);
+    super.move();
     this.person.velocity.update(vx, vy);
     this.person.lastLocation.update(this.person.position);
 

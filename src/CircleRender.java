@@ -1,15 +1,17 @@
-public class CircleRender implements RenderStrategy {
-
-  Person person;
+/**
+ * Simple rendering to draw each person as a circle.
+ */
+public class CircleRender extends AbstractRender {
 
   CircleRender() {
 
   }
 
-  public void setPerson(Person p) {
-    this.person = p;
-  }
-
+  /**
+   * Draw each Person as a circle centered at x, y.
+   * Colors the circle according to their infection status,
+   * and if infected, also includes an infection radius around them.
+   */
   public void render() {
 
     switch (this.person.status) {

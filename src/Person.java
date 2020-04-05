@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
  * A person.
  */
 public class Person {
+  // TODO: override equals
 
   Epidemic epidemic;
   Posn position;
@@ -57,7 +58,7 @@ public class Person {
       case SUSCEPTIBLE:
 
         List<Person> infectedNearby = this.epidemic.population.stream()
-                .filter(person -> new WithinRadius(Constants.INFECTION_RADIUS, this.position).test(person.position))
+                .filter(person -> new WithinDistance(Constants.INFECTION_RADIUS, this.position).test(person.position))
                 .filter(person -> (person.status == Constants.Status.INFECTED))
                 .collect(Collectors.toList());
 

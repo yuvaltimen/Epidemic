@@ -12,6 +12,52 @@ public class Posn {
     this.y = y;
   }
 
+
+  /**
+   * =========== STATIC ===========
+   */
+
+  /**
+   * Scales the given Posn by the given scalar.
+   */
+  static Posn scale(Posn p, float scalar) {
+    return new Posn(p.x * scalar, p.y * scalar);
+  }
+
+  /**
+   * Static method for adding 2 Posns.
+   */
+  static Posn add(Posn p1, Posn p2) {
+    return new Posn(p1.x + p2.x, p1.y + p2.y);
+  }
+
+  /**
+   * Copy this Posn.
+   */
+  static Posn copy(Posn p) {
+    return new Posn(p.x, p.y);
+  }
+
+  /**
+   * Negation of this Posn.
+   */
+  static Posn negate(Posn p) {
+    return new Posn(-p.x, -p.y);
+  }
+
+
+  /**
+   * ========= NON-STATIC =========
+   */
+
+  /**
+   * Scales this Posn by the given scalar.
+   */
+  void scale(float scalar) {
+    this.x *= scalar;
+    this.y *= scalar;
+  }
+
   /**
    * Adds the given Posn's fields to this one's.
    * @param other
@@ -19,6 +65,23 @@ public class Posn {
   void add(Posn other) {
     this.x += other.x;
     this.y += other.y;
+  }
+
+  /**
+   * Calculates the magnitude of this Posn.
+   * @return The distance to zero as a float.
+   */
+  float magnitude() {
+    return new Distance().apply(new Posn(0, 0), this);
+  }
+
+
+  /**
+   * Negation of this Posn.
+   */
+  void negate() {
+    this.x *= -1;
+    this.x *= -1;
   }
 
   /**

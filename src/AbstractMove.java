@@ -14,7 +14,9 @@ public abstract class AbstractMove implements MoveStrategy {
    * The method to update the Person's position and velocity.
    */
   @Override
-  public abstract void move();
+  public  void move() {
+    this.person.position.add(this.person.velocity);
+  }
 
 
   /**
