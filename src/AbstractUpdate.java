@@ -19,7 +19,7 @@ public abstract class AbstractUpdate implements UpdateStrategy {
   @Override
   public void update() {
     this.epidemic.background(50);
-    for (Person p : this.epidemic.population) {
+    for (EpidemicPerson p : this.epidemic.population) {
       p.renderStrategy.render();
       p.update();
     }

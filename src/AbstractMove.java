@@ -2,7 +2,7 @@ public abstract class AbstractMove implements MoveStrategy {
 
   Person person;
 
-  AbstractMove(Person person) {
+  AbstractMove(EpidemicPerson person) {
     this.person = person;
   }
 
@@ -11,7 +11,7 @@ public abstract class AbstractMove implements MoveStrategy {
   }
 
   /**
-   * The method to update the Person's position and velocity.
+   * The method to update the EpidemicPerson's position and velocity.
    */
   @Override
   public  void move() {
@@ -20,7 +20,7 @@ public abstract class AbstractMove implements MoveStrategy {
 
 
   /**
-   * Method to set a given MoveStrategy's Person field.
+   * Method to set a given MoveStrategy's EpidemicPerson field.
    */
   public void setPerson(Person p) {
     this.person = p;

@@ -8,7 +8,7 @@ public class CircleRender extends AbstractRender {
   }
 
   /**
-   * Draw each Person as a circle centered at x, y.
+   * Draw each EpidemicPerson as a circle centered at x, y.
    * Colors the circle according to their infection status,
    * and if infected, also includes an infection radius around them.
    */

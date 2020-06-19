@@ -24,7 +24,7 @@ public class UpdateWithMarket extends AbstractUpdate {
     this.epidemic.rect(Constants.HALF_WIDTH, Constants.HALF_HEIGHT, 10, 10);
     this.epidemic.noFill();
     this.epidemic.ellipse(Constants.HALF_WIDTH, Constants.HALF_HEIGHT, 40, 40);
-    for (Person p : this.epidemic.population) {
+    for (EpidemicPerson p : this.epidemic.population) {
       p.renderStrategy.render();
       p.update();
     }

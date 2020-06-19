@@ -12,11 +12,11 @@ public interface Constants {
    */
   float SHOPPING_RATE = 3;
   /**
-   * The radius at which to draw each Person as a circle.
+   * The radius at which to draw each EpidemicPerson as a circle.
    */
   float RADIUS = 7;
   /**
-   * The radius at which each Person can transmit the disease.
+   * The radius at which each EpidemicPerson can transmit the disease.
    */
   float INFECTION_RADIUS = 20;
   /**

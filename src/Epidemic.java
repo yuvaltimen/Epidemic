@@ -13,7 +13,7 @@ public class Epidemic extends PApplet {
 
   Writer fileWriter;
   Writer stringWriter;
-  Collection<Person> population;
+  Collection<EpidemicPerson> population;
   int timeStep;
   UpdateStrategy updateStrategy;
 
@@ -91,7 +91,7 @@ public class Epidemic extends PApplet {
         float y = Constants.SCREEN_HEIGHT * Constants.random.nextFloat();
         float vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
         float vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
-        this.population.add(new Person(this, new ShoppingRandomWalk(), new CircleRender(), x, y, vx, vy));
+        this.population.add(new EpidemicPerson(this, new ShoppingRandomWalk(), new CircleRender(), x, y, vx, vy));
       }
     } else {
       this.updateStrategy = new UpdateWithoutMarket(this);
@@ -100,7 +100,7 @@ public class Epidemic extends PApplet {
         float y = Constants.SCREEN_HEIGHT * Constants.random.nextFloat();
         float vx = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
         float vy = Constants.MIN_VELOCITY + (Constants.random.nextFloat() * (Constants.MAX_VELOCITY - Constants.MIN_VELOCITY));
-        this.population.add(new Person(this, new RandomWalk(), new CircleRender(), x, y, vx, vy));
+        this.population.add(new EpidemicPerson(this, new RandomWalk(), new CircleRender(), x, y, vx, vy));
       }
     }
   }
@@ -141,7 +141,7 @@ public class Epidemic extends PApplet {
     int i = 0;
     int r = 0;
 
-    for (Person p : this.population) {
+    for (EpidemicPerson p : this.population) {
       if (p.status == Constants.Status.SUSCEPTIBLE) {
         s++;
       } else if (p.status == Constants.Status.INFECTED) {

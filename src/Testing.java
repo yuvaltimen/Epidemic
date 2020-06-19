@@ -6,11 +6,11 @@
 //
 //public class Testing extends PApplet {
 //
-//  Set<Person> population;
+//  Set<EpidemicPerson> population;
 //
 //  Testing() {
 //    this.population = new HashSet<>();
-//    this.population.add(new Person()
+//    this.population.add(new EpidemicPerson()
 //  }
 //
 //
@@ -48,7 +48,7 @@
 //   */
 //  @Override
 //  public void draw() {
-//    for (Person p : this.population) {
+//    for (EpidemicPerson p : this.population) {
 //      p.renderStrategy.render();
 //    }
 //  }

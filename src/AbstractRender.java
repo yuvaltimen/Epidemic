@@ -10,14 +10,14 @@ public abstract class AbstractRender implements RenderStrategy {
   }
 
   /**
-   * Renders this Strategy's Person object.
+   * Renders this Strategy's EpidemicPerson object.
    */
   @Override
   public abstract void render();
 
   /**
-   * Sets this RenderStrategy's Person object/
-   * @param p the Person to set.
+   * Sets this RenderStrategy's EpidemicPerson object/
+   * @param p the EpidemicPerson to set.
    */
   @Override
   public void setPerson(Person p) {

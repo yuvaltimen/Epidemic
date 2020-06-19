@@ -9,7 +9,7 @@ public class RandomWalk extends AbstractMove {
   }
 
   /**
-   * Updates the Person's position and velocity.
+   * Updates the EpidemicPerson's position and velocity.
    */
   @Override
   public void move() {
